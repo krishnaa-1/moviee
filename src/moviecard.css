@@ -1,0 +1,66 @@
+.movie-card-container {
+    background-color: #1a1a1a; /* Dark blackish background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-top: 140px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card-container h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #e50914; /* Netflix red */
+  }
+  
+  .movie-card-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .movie-poster {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-right {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .nav-button {
+    background-color: #e50914; /* Netflix red */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .nav-button:hover {
+    background-color: #b20710; /* Darker red */
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  

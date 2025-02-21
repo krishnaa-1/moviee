@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    background: #e50914;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+    animation: slideDown 0.6s ease-out;
+  }
+  
+  /* Left Section: Logo and Title */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Center Section: Navigation Links */
+  .nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 1.5rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffe600;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffe600;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Right Section: Buttons */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-button {
+    background: #fff;
+    color: #ff4b2b;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-button .icon {
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .nav-button:hover {
+    background: #ffe600;
+    transform: scale(1.05);
+  }
+  
+  /* Slide-down Animation */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
